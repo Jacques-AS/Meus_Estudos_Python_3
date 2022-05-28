@@ -1,0 +1,65 @@
+CORES NO TERMINAL
+Nessa aula, vamos aprender como utilizar os códigos de escape sequence ANSI
+para configurar cores para os seus programas em Python.
+Veja como utilizar o código \033[m com todas as suas principais possibilidades.
+
+Códigos para STYLE:
+0 => sem style algum
+1 => colocar o texto em negrito
+4 => colocar o texto em sublinhado
+7 => colocar o texto em fundo negativo
+
+TEXT
+30 => texto em preto
+31 => texto em vermelho
+32 => texto em verde
+33 => texto em amarelo
+34 => texto em azul
+35 => texto em margenta
+36 => texto em ciano
+37 => texto em cinza
+97 => texto em branco
+
+BLACKGROUND
+40 => fundo em preto
+41 => fundo em vermelho
+42 => fundo em verde
+43 => fundo em amarelo
+44 => fundo em azul
+45 => fundo em margenta
+46 => fundo em ciano
+47 => fundo em cinza
+107 => fundo em branco
+
+
+
+     STYLE      BLACK
+\033[ 0   : 33 : 44   m
+           TEXT
+Exemplos:
+\033[0:30:41m  => sem formatação, texto branco e fundo vermelo
+\033[4:33:44m  => sublinado, texto amarelo e fundo azul
+\033[1:35:43m  => negrito, texto margenta e fundo amarelo
+\033[30:42m    => sem stylo, texto branco e fundo verde
+\033[m         => configuração padrão do terminal
+\033[7:30m     => sem formatação, texto negativo
+
+NA PRÁTICA
+print("\033[1:29:45mOlá, Mundo!\033[m")
+
+a = 3
+b = 8
+print(f'Os valores são \033[1:32m{a}\033[m e \033[1:31m{b} !!!\033[m')
+
+nome = 'Jacques'
+limpa ='\033[m'
+branco ='\033[29m'
+preto ='\033[30m'
+vermelho ='\033[31m'
+verde ='\033[32m'
+amarelo ='\033[33m'
+azul ='\033[34m'
+margenta ='\033[35m'
+ciano ='\033[36m'
+cinza ='\033[37m'
+print(f'{amarelo}Olá prazer te conhecer Sr. {margenta}{nome}')

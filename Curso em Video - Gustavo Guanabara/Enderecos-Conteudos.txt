@@ -1,0 +1,57 @@
+Youtube Curso em Video - Professor Gustavo Guanabara
+Curso de Python 3
+https://www.youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6
+
+Exercícios de Python 3
+https://www.youtube.com/playlist?list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-
+
+https://www.youtube.com/watch?v=S9uPNppGsGo
+Curso Python #01 - Seja um Programador
+
+https://www.youtube.com/watch?v=Mp0vhMDI7fA
+Curso Python #02 - Para que serve o Python?
+De onde vem o Python? Por que esse nome? Quais são as grandes empresas mundiais que usam Python em seus softwares? Essas e muitas outras perguntas serão respondidas nessa aula. 
+Gostou da aula? Então torne-se um Gafanhoto APOIADOR do CursoemVídeo acessando o site cursoemvideo.com/apoie
+A linguagem Python foi criada na Holanda em 1989 pelo programador Guido Van Hossum, que trabalhava no Centro de Matemática e Computação (CWI) em Amsterdam.
+O nome Python foi uma homenagem ao seriado Inglês Monty Python Flying Circus, e foi ideia do próprio Van Hossum, já que os projetos dentro do CWI tinham nomes de programas de televisão.
+Atualmente a linguagem é mantida por uma fundação sem fins lucrativos chamada Python Software Foundation, que é apoiada por várias empresas como Microsoft, Google e Globo.
+Python é uma linguagem multiplataforma interpretada de propósito geral, fácil, intuitiva e principalmente muito organizada. Python é software livre e 100% orientada a objetos. A linguagem Python é muito usada nos campos de inteligência artificial, computação 3D, biotecnologia e realidade virtual, graças à essa simplicidade, versatilidade e capacidade de processamento.
+Quem usa Python? A Zope, Air Canada, BitTorrent, Globo, Google, YouTube, NASA, Industrial Light & Magic (Python foi usado em Star Wars), Autodesk e muito mais.
+Curso em Vídeo
+Seja um apoiador: http://cursoemvideo.com/apoie
+Site: http://www.cursoemvideo.com
+YouTube: http://www.youtube.com/cursoemvideo
+Facebook: http://www.facebook.com/cursosemvideo
+Twitter: http://twitter.com/cursosemvideo
+Google+: http://plus.google.com/11266655883741...
+
+https://www.youtube.com/watch?v=VuKvR1J2LQE
+Curso Python #03 - Instalando o Python3 e o IDLE
+Entenda como funciona um Interpretador e veja como o Python funciona. Depois aprenda como instalar o Python 3.0 e o IDLE em seu computador com Windows, Linux ou Mac OS.
+Gostou da aula? Então torne-se um Gafanhoto APOIADOR do CursoemVídeo acessando o site cursoemvideo.com/apoie
+O Python é uma linguagem interpretada, mas será que você sabe o que é um interpretador e como ele funciona? Veja detalhadamente o funcionamento interno do Python e siga as instruções para instalar a Linguagem Python no seu computador.
+O Python é compatível com vários sistemas operacionais como o Microsoft Windows, distribuições Linux e o Mac OS. Veja como instalar o Python e o IDLE.
+
+https://www.youtube.com/watch?v=31llNGKWDdo
+Curso Python #04 - Primeiros comandos em Python3
+Agora chegou a hora de aprender os comandos básicos do Python e fazer os primeiros programas em Linguagem Python.
+Gostou da aula? Então torne-se um Gafanhoto APOIADOR do CursoemVídeo acessando o site cursoemvideo.com/apoie
+Nesta aula, vamos aprender a utilizar as instruções print() e input() para realizar interação com o usuário. Além disso, vamos ver o conceito fundamental de variável e como elas se comportam dentro de um programa em Python. 
+Além disso, teremos exercícios resolvidos em Python, com desafios de programação, onde você terá que criar programas em Python de acordo com enunciados propostos durante a aula.
+
+https://www.youtube.com/watch?v=ElRd0cbXIv4
+Curso Python #05 - Instalando o PyCharm e o QPython3
+Nesta aula, veremos como instalar e configurar a IDE (Integrated Development Environment) Python chamada PyCharm no Windows, MacOS e Linux. Além disso, veremos como programar Python no Android, utilizando o QPython3. 
+Gostou da aula? Então torne-se um Gafanhoto APOIADOR do CursoemVídeo acessando o site cursoemvideo.com/apoie
+Nós do CursoemVideo sempre recomendamos assistir a aula completa, mas se quiser aprender diretamente uma parte específica, clique nos marcadores de tempo a seguir:
+1:02 - Onde é possível programar em Python
+1:35 - Quer mais aulas? Veja aqui!
+3:10 - Como ajudar?
+4:35 - Quando o curso volta?
+5:39 - O que é uma IDE?
+7:16 - Instalando o PyCharm no Windows
+10:14 - Instalando o PyCharm no MacOS
+13:02 - Instalando o PyCharm no Linux
+16:59 - Instalando o QPython3 no Android
+Aula do Curso de Programação Python criado pelo professor Gustavo Guanabara para o portal CursoemVideo.com.
+

@@ -1,0 +1,292 @@
+Funcionalidades Principais:
+math -> 
+ceil (faz um arrendondamento do num pra cima)
+floor ( faz pra baixo)
+trunc (vai arredondar o numero, tirar a virgula dele deixando inteiro)
+pow (potencia)
+sqrt (raiz quadrada)
+factorial (calculo fatorial(?))
+hypot (hipotenusa, tem q botar o cateto adj e o opost nos parenteses)
+cos (cosseno)
+sin (seno)
+tan (tangente)
+
+random ->
+random (numero aleatorio(e necessario determina-lo, c n vai aparecer um de 0-1)
+randint (numero inteiro aleatorio)
+choice (uma escolha de uma lista)
+shuffle (embaralha um lista)
+
+o legal de usar o sample ao invés do shuffle é q da pra limitar a quantidade
+de pessoas q vão apresentar, atribuindo a quantidade no 'k', então se na lista
+tiverem 10 alunos inscritos mas o k for igual a 5 então serão escolhidos
+só 5 dentre os 10 alunos
+
+sample([aluno1, aluno2, aluno3, aluno4], k=2)
+-> serão escolhidos 2 dentre os 4 alunos
+
+
+
+Aritméticas cálculos:
+Potência se usa **
+ou também comando pow(base,potência), exemplo qual a potência de 4 elevado a 3
+pow(4,3)
+
+Raiz quadrada se usa **(1/2)
+exemplo: 81**(1/2)
+
+Raiz cubica se usa **(1/3)
+exemplo: 127**(1/3)
+
+#alinhando a direita, esquerda e centralizando, em X caracteres.
+# em X caracteres
+nome=input('Qual seu nome ? ')
+print('Prazer te conhecer, {:20}!'.format(nome))
+#Run
+Qual seu nome ? Jacques
+Prazer te conhecer Jacques             !
+
+
+# alinhamento a direita
+nome=input('Qual seu nome ? ')
+print('Prazer te conhecer, {:>20}!'.format(nome))
+#Run
+Qual seu nome ? Jacques
+Prazer te conhecer,              Jacques!
+
+# alinhamento a esquerda
+nome=input('Qual seu nome ? ')
+print('Prazer te conhecer, {:<20}!'.format(nome))
+#Run
+Qual seu nome ? Jacques
+Prazer te conhecer, Jacques             !
+
+# alinhamento centralizado
+nome=input('Qual seu nome ? ')
+print('Prazer te conhecer, {:^20}!'.format(nome))
+#Run
+Qual seu nome ? Jacques
+Prazer te conhecer,       Jacques       !
+
+# alinhamento centralizado com um caracteres '='
+nome=input('Qual seu nome ? ')
+print('Prazer te conhecer, {:=^20}!'.format(nome))
+#Run
+Qual seu nome ? Jacques
+Prazer te conhecer, ======Jacques=======!
+
+Abreviações:
+s para soma ( + )
+m para mutiplicação ( * )
+d para divisão ( / )
+di para divisão inteira ( // )
+e para exponênciação ( ** )
+
+#Prática
+n1=int(input('Um valor: '))
+n2=int(input('Outro valor: '))
+s = n1 + n2
+m = n1 * n2
+d = n1 / n2
+di = n1 // n2
+e = n1 ** n2
+print('A soma é {}, a multiplicação é {}, a divisão é {}'.format(s, m, d))
+print('A divisão inteira é {}, e a exponênciação é {}'.format(di, e))
+#Run
+Um valor: 4
+Outro valor: 3
+A soma é 7, a multiplicação é 12, a divisão é 1.3333333333333333
+A divisão inteira é 1, e a exponênciação é 64
+
+#Para diminuir a dizima nesta divisão ou seja formatando as casas decimas.
+{:.3f} nesta opção 3 casas após o ponto
+print('A soma é {}, a multiplicação é {}, a divisão é {:.3f}'.format(s, m, d))
+#Run
+A soma é 7, a multiplicação é 12, a divisão é 1.333
+
+{:.0f} nesta opção nenhuma casa após o ponto
+print('A soma é {}, a multiplicação é {}, a divisão é {:.0f}'.format(s, m, d))
+#Run
+A soma é 7, a multiplicação é 12, a divisão é 1
+
+# utilizando o comando end= ' ' você deixa os carateres ou frase na mesma linha.
+print('A soma é {}, a multiplicação é {}, a divisão é {:.3f}'.format(s, m, d), end=' ')
+print('A divisão inteira é {}, e a exponênciação é {}'.format(di, e))
+#Run
+A soma é 7, a multiplicação é 12, a divisão é 1.333 A divisão inteira é 1, e a exponênciação é 64
+
+# utilizando o comando \n você quebra a linha
+print('A soma é {}, \n a multiplicação é {}, \n a divisão é {:.3f}'.format(s, m, d))
+print('A divisão inteira é {}, \n e a exponênciação é {}'.format(di, e))
+#Run
+A soma é 7, 
+ a multiplicação é 12, 
+ a divisão é 1.333
+A divisão inteira é 1, 
+ e a exponênciação é 64
+
+
+Desafio 005:
+Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor.
+n1 = int(input('Digite um número: '))
+sucessor = n1 + 1
+antecessor = n1 - 1
+print('O sucessor de {} é {}'.format(n1, sucessor))
+print('O antecessor de {} é {}'.format(n1, antecessor))
+
+Desafio 006:
+Crie um algoritimo que leia um número e mostre o seu dobro, triplo e raiz quadrada.
+n1 = int(input('Digite um número: '))
+dobro = n1 ** 2
+triplo = n1 ** 3
+raizquadrada = n1 ** (1/2)
+print('Valor de {} o dobro é {} \n o triplo {} e a raiz quadrada {:.2f}'.format(n1, dobro, triplo, raizquadrada))
+
+
+Desafio 007:
+Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a média.
+nota1=float(input('Nota Teste: '))
+nota2=float(input('Nota Prova: '))
+notamedia = (nota1 + nota2) / 2
+print('Nota do Teste {} com a Nota Prova {} a MÉDIA: {}'.format(nota1, nota2, notamedia))
+
+
+Desafio 008:
+Escreva um programa que leia um valor em metros e exiba convertido em centímetros e milímetros.
+metro=int(input('Digite quantidade de metros: '))
+centimetro = metro * 100
+milimetro = metro * 1000
+#print('Quant. de Metro {} é igual a {}  Centímetros e igual {} Milímetros'. format(metro, centimetro, milimetro))
+print(f'Quant. de Metro {metro} é igual a {centimetro}  Centímetros e igual {milimetro} Milímetros')
+
+Desafio 009:
+Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada.
+n1=int(input('Digite um número: '))
+tabuada_de_multiplicacao = n1*1, n1*2, n1*3, n1*4, n1*5, n1*6, n1*7, n1*8, n1*9, n1*10
+#print('Tabuada de Multiplicação de {} é {}'.format(n1, tabuada_de_multiplicacao))
+print(f'Tabuada de Multiplicação de {n1} é: {tabuada_de_multiplicacao}')
+
+#Outro modelo
+n1=int(input('Digite um número: '))
+tabuada_de_multiplicacao0 = n1*0
+tabuada_de_multiplicacao1 = n1*1
+tabuada_de_multiplicacao2 = n1*2
+tabuada_de_multiplicacao3 = n1*3
+tabuada_de_multiplicacao4 = n1*4
+tabuada_de_multiplicacao5 = n1*5
+tabuada_de_multiplicacao6 = n1*6
+tabuada_de_multiplicacao7 = n1*7
+tabuada_de_multiplicacao8 = n1*8
+tabuada_de_multiplicacao9 = n1*9
+tabuada_de_multiplicacao10 = n1*10
+print('Tabuada de Multiplicação')
+print(f'{n1} x 0 = {tabuada_de_multiplicacao0}')
+print(f'{n1} x 1 = {tabuada_de_multiplicacao1}')
+print(f'{n1} x 2 = {tabuada_de_multiplicacao2}')
+print(f'{n1} x 3 = {tabuada_de_multiplicacao3}')
+print(f'{n1} x 4 = {tabuada_de_multiplicacao4}')
+print(f'{n1} x 5 = {tabuada_de_multiplicacao5}')
+print(f'{n1} x 6 = {tabuada_de_multiplicacao6}')
+print(f'{n1} x 7 = {tabuada_de_multiplicacao7}')
+print(f'{n1} x 8 = {tabuada_de_multiplicacao8}')
+print(f'{n1} x 9 = {tabuada_de_multiplicacao9}')
+print(f'{n1} x 10 = {tabuada_de_multiplicacao10}')
+
+
+Desafio 010:
+Crie um programa que leia quanto dinheiro um pessoa tem na carteira e mostre quantos dólares ela pode comprar.
+Considere:
+U$$ 1.00 = R$ 3.27
+
+n1=float(input('Dinheiro na Carteira R$ '))
+dolar = n1 / 3.27
+print(f'Dinheiro na carteira R$ {n1:.2f} em Dólares U$$ {dolar:.2f}')
+
+
+Desafio 011:
+Faça um programa que leia a largura e a altura de uma parede em metros, calcule a sua área e a quantidade de tinta necessária para pintá-la, sabendo que cada litro de tinta, pinta uma área de 2m².
+larg = int(input('Largura da Parede: '))
+alt = int(input('Altura da Parede: '))
+dimensao = larg * alt
+tinta = dimensao / 2
+print(f'A dimensão da área da parede é: {dimensao} m², será utilizado {tinta} latas de tintas para demanda exigida.')
+
+
+Desafio 012:
+Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
+n1 = int(input('Preço do Produto: R$ '))
+desc = n1 * 0.05
+prod = n1 - desc
+print(f'Preço do Produto R$ {n1:.2f} \n 5% de desconto R$ {desc:.2f} \n Valor do Produto com Desconto R$ {prod:.2f}')
+
+Desafio 013:
+Faça um algoritmo que leia o salário de um funcionário
+n1 = float(input('Salário do Funcionário: R$ '))
+aumento = n1 * 0.15
+salario = n1 + aumento
+print(f'Salário do funcionário: R$ {n1:.2f}\n Aumento de 15% salário: R$ {aumento:.2f} \n Salário Ajustado: R$ {salario:.2f}')
+
+
+
+
+
+
+
+
+
+
+
+e most
+
+
+
+
+
+p = float(input('Perço original: '))
+d = p * 0.05
+pn = p - d
+print(f'O preço com desconto de 5% é {pn}')
+
+
+n = input('QUAL É SEU NOME?')
+print(f'Prazer em te conhecer, {n}!')
+# sem espaços
+print(f'Prazer em te conhecer, {n:20}!')
+# com 20 espaços
+
+
+
+name = str(input('Seu nome: '))
+print(f'Olá, {name}')
+print(f'Olá, {name:=^20}'.upper())
+
+
+n1 = int(input("Escreva um valor em metros: "))
+centimetros = int(n1*100)
+milimetros = int(n1*1000)
+print('Em {} metro tem {} centimetros'.format(n1, centimetros))
+print('Em {} metro existe {} Milimetros'.format(n1, milimetros))
+
+n1 = float(input('Digite a primeira nota: '))
+n2 = float(input('Digite a segunda nota: '))
+m = (n1+n2)/2
+print(f'A média das notas é: {m}')
+
+n = int(input('Digite um numero: '))
+
+
+
+
+Desafio 11: 
+al=float(input('Quantos metros de altura essa parede tem?'))
+l=float(input('E quantos metros essa parede tem de largura?'))
+ar=l*al 
+qdt=ar/2
+print('A área dessa parede tem {}m² e você vai precisar de {} litros de tinta para pintar essa área'.format(ar,qdt))
+
+Desafio 13: 
+salario = float(input('Qual é o seu salário? '))
+aumento = salario*0.15
+print(f'Seu novo salário, com 15% de aumento, é de {aumento+salario}')
+
+

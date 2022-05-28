@@ -1,0 +1,123 @@
+AULA 008
+
+‎#PARA IMPORTAR
+
+#Exemplo BIBLIOTECAS DE: BEBIDA, DOCE, COMIDA cada uma delas contendo diversos objetos. (generalista)
+#UTILIZA SEGUINTE COMANDO:
+importbebida
+
+#Exemplo BIBLIOTECAS DE: BEBIDA, DOCE, COMIDA cada uma delas contendo apenas um objeto. (especifico)
+#UTILIZA SEGUINTE COMANDO:
+frombebidaimport
+
+
+#COMANDO FUNCIONALIDADES BIBLIOTECA MATH:
+funcionalidades dos operadores aritméticos
+
+CEIL, FLOOR, TRUNC, POW, SQRT, FACTORIAL
+ceil (arredondamento para cima)
+floor (arredondamento para baixo)
+trunc (truncar um número, ou seja retirar da virgula)
+pow (função de potência, ou seja exponenciação)
+sqrt (calcular a raiz quadrada)
+factorial (cálculo de fatores)
+
+#COMANDO PARA IMPORTAR TODAS BIBLIOTECAS DE MATH
+importmath
+
+#COMANDO PARA IMPORTAR APENAS BIBLIOTECA DE SQRT
+frommathimportsqrt
+
+#VAMOS AOS COMANDOS NA PRÁTICA
+import math
+num = int(input('Digite um número: '))
+raiz = math.sqrt(num)
+print(f'A raiz de um número {num} é igual {raiz:.2f}')
+#Run
+Digite um número: 29
+A raiz de um número 29 é igual 5.39
+
+#ESTES DOIS MODOS DE PRINT FAZEM COM QUE FIQUEM COM DUAS CASAS DECIMAIS
+print(f'A raiz de um número {num} é igual {raiz:.2f}')
+print(f'A raiz de um número {num} é igual {(raiz):.2f}')
+Digite um número: 29
+A raiz de um número 29 é igual 5.39
+
+
+#VAMOS USAR O ARREDODAMENTO PARA CIMA COM COMANDO CEIL
+print(f'A raiz de um número {num} é igual {math.ceil(raiz)}')
+#Run
+Digite um número: 29
+A raiz de um número 29 é igual 6
+
+#VAMOS USAR O ARREDODAMENTO PARA BAIXO COM COMANDO FLOOR
+print(f'A raiz de um número {num} é igual {math.floor(raiz)}')
+#Run
+Digite um número: 29
+A raiz de um número 29 é igual 5
+
+#IMPORTANDO SOMENTE O ESPECIFICO TIPO SQRT (REFERENTE A RAIZ QUADRADA)
+from math import sqrt
+num = int(input('Digite um número: '))
+raiz = sqrt(num)
+print(f'A raiz de um número {num} é igual {(raiz):.2f}')
+#Run
+Digite um número: 29
+A raiz de um número 29 é igual 5.39
+
+#IMPORTANDO SOMENTE O ESPECIFICO TIPO SQRT (REFERENTE A RAIZ QUADRADA) E FLOOR (ARREDONDAMENTO PARA BAIXO) 
+from math import sqrt, floor
+num = int(input('Digite um número: '))
+raiz = sqrt(num)
+print(f'A raiz de um número {num} é igual {floor(raiz):.2f}')
+#Run
+Digite um número: 29
+A raiz de um número 29 é igual 5.00
+
+
+
+#IMPORTANDO EMOJI
+import emoji
+print(emoji.emojize('Olá, Mundo" :earth_americas:', use_aliases=True))
+print(emoji.emojize('olá mundo :punch:',use_aliases=True))
+
+
+
+
+
+
+
+
+
+Dica: Tem ainda como vc escolher como vc quer chamar os metodos!
+
+por exemplo:
+
+utilizando "as" vc pode dar apelido a alguma função da biblioteca. Vejamos com o sqrt:
+
+from math import sqrt as raizquadrada
+
+agora ao inves de usar sqrt(4), eu uso raizquadrada(4)
+
+obviamente, no exemplo ficou foi mais extenso o apelido, mas é so pra demonstrar, vc poderia chamar ele de "r" no caso e vai funcionar igualmente.
+
+from math import sqrt as r
+
+r(4)
+
+pronto! isso retorna = 2, pois a raiz quadrada de 4 é 2.
+
+abraço!
+
+
+
+
+Pra quem tá fazendo agora com o print (f""), e não sabe como usar os comando math.ceil. e só por dentro das {} como se já fossem as variáveis.
+Exemplo:
+Antes: print(f' a raiz quadrada e {raiz}')
+Agora: print(f' a raiz quadrada e {math.ceil(raiz)}')
+
+
+
+Atualizando:
+Agora o caminho é em: File - Settings - Project:<nomedoseuprojeto> - Project Interpreter
